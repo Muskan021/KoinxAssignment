@@ -1,0 +1,73 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "created_at",
+        "sentCoin",
+        "receivedCoin",
+        "sentCoinAmount",
+        "receivedCoinAmount"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                118
+            ]
+        },
+        "created_at": {
+            "type": "integer",
+            "default": 0,
+            "title": "The created_at Schema",
+            "examples": [
+                1675603977093
+            ]
+        },
+        "sentCoin": {
+            "type": "string",
+            "default": "",
+            "title": "The sentCoin Schema",
+            "examples": [
+                "INR"
+            ]
+        },
+        "receivedCoin": {
+            "type": "string",
+            "default": "",
+            "title": "The receivedCoin Schema",
+            "examples": [
+                "USDT"
+            ]
+        },
+        "sentCoinAmount": {
+            "type": "integer",
+            "default": 0,
+            "title": "The sentCoinAmount Schema",
+            "examples": [
+                245
+            ]
+        },
+        "receivedCoinAmount": {
+            "type": "integer",
+            "default": 0,
+            "title": "The receivedCoinAmount Schema",
+            "examples": [
+                482
+            ]
+        }
+    },
+    "examples": [{
+        "id": 118,
+        "created_at": 1675603977093,
+        "sentCoin": "INR",
+        "receivedCoin": "USDT",
+        "sentCoinAmount": 245,
+        "receivedCoinAmount": 482
+    }]
+}
